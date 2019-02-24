@@ -5,7 +5,7 @@ def my_select(collection)
  binding.pry
  while i < collection.length
   if yield collection[i] == true
-    new_array[i] = collection[i]
+    new_array[i] << collection[i]
   else
     nil
   end
